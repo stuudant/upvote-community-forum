@@ -4,6 +4,16 @@ import { Orbis, OrbisProvider } from "@orbisclub/components";
 import "@orbisclub/components/dist/index.modern.css";
 import React, { useEffect, useState } from 'react';
 import { GlobalContext } from "../contexts/GlobalContext";
+/** Install our components package and import in your app */
+import { Chat } from "@orbisclub/components";
+import "@orbisclub/components/dist/index.modern.css";
+
+/** Use the Chat component wherever you want in your app */
+function App() {
+  return <Chat 
+            theme="kjzl6cwe1jw1471zlvz83ticgwhsvhezhmpsf970ybcn0088ybxgv29a3n9qi8c" 
+            context="kjzl6cwe1jw147anpcjg05k3g53sla8h3kl1ctrycrhrt50iiua9a9f3rnf6lkf" />;
+}
 
 /**
  * Set the global forum context here (you can create categories using the dashboard by clicking on "Create a sub-context"
